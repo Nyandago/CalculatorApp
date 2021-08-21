@@ -8,5 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="bgBlue">#9fbcdf</color>
+    <color name="greyDisp">#6B6B6D</color>
+    <color name="yellowBt">#F79231</color>
+    <color name="greyBt">#D6D6D6</color>
 
 </resources>
