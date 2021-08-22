@@ -11,9 +11,8 @@
 
     <EditText
         android:id="@+id/etDisplay"
-        android:layout_width="429dp"
-        android:layout_height="175dp"
-        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/greyDisp"
         android:ems="10"
         android:inputType="text"
@@ -21,222 +20,257 @@
         android:textAlignment="textEnd"
         android:textColor="@color/white"
         android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@id/btAc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TableLayout
-        android:id="@+id/tableLayout2"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btAc"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/greyBt"
+        android:onClick="btNumberEvent"
+        android:text="AC"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/bt7"
+        app:layout_constraintEnd_toStartOf="@id/btPlusMinus"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etDisplay">
+        app:layout_constraintTop_toBottomOf="@+id/etDisplay" />
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:id="@+id/btAc"
-                android:layout_width="30pt"
-                android:layout_height="40pt"
-                android:layout_weight="25"
-                android:background="@color/greyBt"
-                android:text="AC"
-                android:textSize="34sp" />
-
-            <Button
-                android:id="@+id/btPlusMinus"
-                android:layout_width="30pt"
-                android:layout_height="40pt"
-                android:layout_weight="25"
-                android:background="@color/greyBt"
-                android:text="+/-"
-                android:textSize="34sp" />
-
-            <Button
-                android:id="@+id/btPercent"
-                android:layout_width="30pt"
-                android:layout_height="40pt"
-                android:layout_weight="25"
-                android:background="@color/greyBt"
-                android:text="%"
-                android:textSize="34sp" />
-
-            <Button
-                android:id="@+id/btDivision"
-                android:layout_width="30pt"
-                android:layout_height="40pt"
-                android:layout_weight="25"
-                android:background="@color/yellowBt"
-                android:text="÷"
-                android:textSize="34sp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/bt7"
-                android:layout_width="30pt"
-                android:layout_height="40pt"
-                android:layout_weight="25"
-                android:background="@color/greyBt"
-                android:text="7"
-                android:textSize="34sp" />
-
-            <Button
-                android:id="@+id/bt8"
-                android:layout_width="30pt"
-                android:layout_height="40pt"
-                android:layout_weight="25"
-                android:background="@color/greyBt"
-                android:text="8"
-                android:textSize="34sp" />
-
-            <Button
-                android:id="@+id/bt9"
-                android:layout_width="30pt"
-                android:layout_height="40pt"
-                android:layout_weight="25"
-                android:background="@color/greyBt"
-                android:text="9"
-                android:textSize="34sp" />
-
-            <Button
-                android:id="@+id/btMultiply"
-                android:layout_width="30pt"
-                android:layout_height="40pt"
-                android:layout_weight="25"
-                android:background="@color/yellowBt"
-                android:text="x"
-                android:textAllCaps="false"
-                android:textSize="34sp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/bt4"
-                android:layout_width="30pt"
-                android:layout_height="40pt"
-                android:layout_weight="25"
-                android:background="@color/greyBt"
-                android:text="4"
-                android:textSize="34sp" />
-
-            <Button
-                android:id="@+id/bt5"
-                android:layout_width="30pt"
-                android:layout_height="40pt"
-                android:layout_weight="25"
-                android:background="@color/greyBt"
-                android:text="5"
-                android:textSize="34sp" />
-
-            <Button
-                android:id="@+id/bt6"
-                android:layout_width="wrap_content"
-                android:layout_height="40pt"
-                android:layout_weight="25"
-                android:background="@color/greyBt"
-                android:text="6"
-                android:textSize="34sp" />
-
-            <Button
-                android:id="@+id/btMinus"
-                android:layout_width="30pt"
-                android:layout_height="40pt"
-                android:layout_weight="25"
-                android:background="@color/yellowBt"
-                android:text="-"
-                android:textSize="34sp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <Button
-                android:id="@+id/bt1"
-                android:layout_width="30pt"
-                android:layout_height="40pt"
-                android:layout_weight="1"
-                android:background="@color/greyBt"
-                android:text="1"
-                android:textSize="34sp" />
-
-            <Button
-                android:id="@+id/bt2"
-                android:layout_width="30pt"
-                android:layout_height="40pt"
-                android:layout_weight="1"
-                android:background="@color/greyBt"
-                android:text="2"
-                android:textSize="34sp" />
-
-            <Button
-                android:id="@+id/bt3"
-                android:layout_width="30pt"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/greyBt"
-                android:text="3"
-                android:textSize="34sp" />
-
-            <Button
-                android:id="@+id/btPlus"
-                android:layout_width="30pt"
-                android:layout_height="40pt"
-                android:layout_weight="1"
-                android:background="@color/yellowBt"
-                android:text="+"
-                android:textSize="34sp" />
-        </TableRow>
-    </TableLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/btPlusMinus"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="1dp"
-        android:layout_weight="1"
+        android:background="@color/greyBt"
+        android:onClick="btNumberEvent"
+        android:text="+/-"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/bt8"
+        app:layout_constraintEnd_toStartOf="@id/btPercent"
+        app:layout_constraintStart_toEndOf="@id/btAc"
+        app:layout_constraintTop_toBottomOf="@+id/etDisplay" />
+
+    <Button
+        android:id="@+id/btPercent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/greyBt"
+        android:onClick="btNumberEvent"
+        android:text="%"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/bt9"
+        app:layout_constraintEnd_toStartOf="@id/btDivision"
+        app:layout_constraintStart_toEndOf="@id/btPlusMinus"
+        app:layout_constraintTop_toBottomOf="@+id/etDisplay" />
+
+    <Button
+        android:id="@+id/btDivision"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/yellowBt"
+        android:onClick="btNumberEvent"
+        android:text="÷"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/btMultiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btPercent"
+        app:layout_constraintTop_toBottomOf="@+id/etDisplay" />
+
+    <Button
+        android:id="@+id/bt7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/greyBt"
+        android:onClick="btNumberEvent"
+        android:text="7"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/bt4"
+        app:layout_constraintEnd_toStartOf="@id/bt8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAc" />
+
+    <Button
+        android:id="@+id/bt8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/greyBt"
+        android:onClick="btNumberEvent"
+        android:text="8"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/bt5"
+        app:layout_constraintEnd_toStartOf="@id/bt9"
+        app:layout_constraintStart_toEndOf="@id/bt7"
+        app:layout_constraintTop_toBottomOf="@+id/btPlusMinus" />
+
+    <Button
+        android:id="@+id/bt9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/greyBt"
+        android:onClick="btNumberEvent"
+        android:text="9"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/bt6"
+        app:layout_constraintEnd_toStartOf="@id/btMultiply"
+        app:layout_constraintStart_toEndOf="@id/bt8"
+        app:layout_constraintTop_toBottomOf="@+id/btPercent" />
+
+    <Button
+        android:id="@+id/btMultiply"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/yellowBt"
+        android:onClick="btNumberEvent"
+        android:text="x"
+        android:textAllCaps="false"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/btMinus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bt9"
+        app:layout_constraintTop_toBottomOf="@+id/btDivision" />
+
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/greyBt"
+        android:onClick="btNumberEvent"
+        android:text="5"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/bt2"
+        app:layout_constraintEnd_toStartOf="@id/bt6"
+        app:layout_constraintStart_toEndOf="@id/bt4"
+        app:layout_constraintTop_toBottomOf="@id/bt8" />
+
+    <Button
+        android:id="@+id/bt6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/greyBt"
+        android:onClick="btNumberEvent"
+        android:text="6"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/bt3"
+        app:layout_constraintEnd_toStartOf="@id/btMinus"
+        app:layout_constraintStart_toEndOf="@id/bt5"
+        app:layout_constraintTop_toBottomOf="@+id/bt9" />
+
+    <Button
+        android:id="@+id/btMinus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/yellowBt"
+        android:onClick="btNumberEvent"
+        android:text="-"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/btPlus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bt6"
+        app:layout_constraintTop_toBottomOf="@+id/btMultiply" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/greyBt"
+        android:onClick="btNumberEvent"
+        android:text="1"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/bt0"
+        app:layout_constraintEnd_toStartOf="@id/bt2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt4" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/greyBt"
+        android:onClick="btNumberEvent"
+        android:text="2"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/bt0"
+        app:layout_constraintEnd_toStartOf="@id/bt3"
+        app:layout_constraintStart_toEndOf="@id/bt1"
+        app:layout_constraintTop_toBottomOf="@+id/bt5" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/greyBt"
+        android:onClick="btNumberEvent"
+        android:text="3"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/btDot"
+        app:layout_constraintEnd_toStartOf="@id/btPlus"
+        app:layout_constraintStart_toEndOf="@id/bt2"
+        app:layout_constraintTop_toBottomOf="@+id/bt6" />
+
+    <Button
+        android:id="@+id/btPlus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/yellowBt"
+        android:onClick="btNumberEvent"
+        android:text="+"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/btEqual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bt3"
+        app:layout_constraintTop_toBottomOf="@+id/btMinus" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/greyBt"
+        android:onClick="btNumberEvent"
+        android:text="4"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/bt1"
+        app:layout_constraintEnd_toStartOf="@id/bt5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt7" />
+
+    <Button
+        android:id="@+id/bt0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/greyBt"
+        android:onClick="btNumberEvent"
+        android:text="0"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btDot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt1" />
+
+    <Button
+        android:id="@+id/btDot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/greyBt"
+        android:onClick="btNumberEvent"
+        android:text="."
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btEqual"
+        app:layout_constraintStart_toEndOf="@id/bt0"
+        app:layout_constraintTop_toBottomOf="@+id/bt2" />
+
+    <Button
+        android:id="@+id/btEqual"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/yellowBt"
+        android:onClick="btNumberEvent"
+        android:text="="
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tableLayout2">
-
-        <Button
-            android:id="@+id/bt0"
-            android:layout_width="30pt"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/greyBt"
-            android:text="0"
-            android:textSize="34sp" />
-
-        <Button
-            android:id="@+id/btDot"
-            android:layout_width="30pt"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/greyBt"
-            android:text="."
-            android:textSize="34sp" />
-
-        <Button
-            android:id="@+id/btEqual"
-            android:layout_width="50pt"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/yellowBt"
-            android:text="="
-            android:textSize="34sp" />
-    </LinearLayout>
+        app:layout_constraintStart_toEndOf="@id/btDot"
+        app:layout_constraintTop_toBottomOf="@+id/btPlus" />
 
 </android.support.constraint.ConstraintLayout>
