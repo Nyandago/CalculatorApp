@@ -89,10 +89,11 @@ class MainActivity : AppCompatActivity() {
             val newNumber = etDisplay.text.toString()
             var answer : Double? = null
 
+
             when(mOperator){
                 "+" -> { answer = mOldNumber.toDouble() + newNumber.toDouble() }
                 "*" -> { answer = mOldNumber.toDouble() * newNumber.toDouble() }
-                "-" -> { answer = mOldNumber.toDouble() - newNumber.toDouble() }
+                "-" -> { answer =mOldNumber.toDouble() - newNumber.toDouble() }
                 "/" -> { answer = mOldNumber.toDouble() / newNumber.toDouble() }
 
             }
@@ -106,8 +107,8 @@ class MainActivity : AppCompatActivity() {
 
     fun btPercentEvent(view: View){
         try {
-            val num = etDisplay.text.toString().toDouble() / 100
-            etDisplay.setText("$num %")
+            val num = etDisplay.text.toString().toDouble()
+            etDisplay.setText("$num% = ${num/100}")
         } catch (ex: Exception){
             Toast.makeText(this,ex.message,Toast.LENGTH_LONG).show()
         }
